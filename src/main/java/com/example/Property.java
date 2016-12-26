@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
  * Created by nick on 16/4/13.
  */
 @Component("property")
-//@PropertySource("file:startup.properties")
-@PropertySource("classpath:startup_new.properties")
+@PropertySource("file:startup.properties")
+//@PropertySource("classpath:startup_new.properties")
 @Getter
 public class Property {
 
@@ -41,4 +41,6 @@ public class Property {
     @Value("${datasource.driver}")
     private String dataSourceDriver;
 
+    @Value("${amazon.associateId}")
+    private String associateId;
 }

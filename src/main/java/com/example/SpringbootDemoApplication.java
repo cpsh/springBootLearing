@@ -32,5 +32,7 @@ public class SpringbootDemoApplication implements CommandLineRunner{
 		log.info("AliyunOssUserBucket : " + property.getAliyunOssUserBucket());
 		log.info("OssAccessKeySecret : " + property.getOssAccessKeySecret());
 		log.info("*************************************");
+
+
 	}
 }
