@@ -36,6 +36,9 @@ public class ReadingListController {
         this.readingListRepository = readingListRepository;
     }
 
+    public ReadingListController(){
+    }
+
     @RequestMapping(value = "/{reader}",method = RequestMethod.GET)
     public String readerBooks(@PathVariable("reader") String reader, Model model){
         log.info("reader : " + reader);
@@ -67,7 +70,10 @@ public class ReadingListController {
         return  "redirect:/readingList/{reader}";
     }
 
-
+    @RequestMapping("/hello")
+    public String hello() {
+        return "Hello World";
+    }
 
 
 
