@@ -120,7 +120,14 @@
             <artifactId>spring-boot-starter-remote-shell</artifactId>
         </dependency>
 
+        <!-- springboot开发者工具库 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+
 	</dependencies>
+
 
 	<build>
 		<plugins>
