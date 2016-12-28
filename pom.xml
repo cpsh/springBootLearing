@@ -108,6 +108,18 @@
             <version>2.53.1</version>
         </dependency>
 
+        <!-- 启用Actuator端点 Web端点，通过它们了解应用程序运行时的内部状况-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- 连接Actuator 的远程shell -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-remote-shell</artifactId>
+        </dependency>
+
 	</dependencies>
 
 	<build>
