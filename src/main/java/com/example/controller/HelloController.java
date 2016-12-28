@@ -24,4 +24,9 @@ public class HelloController {
         return "index";
     }
 
+    @RequestMapping("/error")
+    public String redirError(){
+        return "redirect:/error";
+    }
+
 }
